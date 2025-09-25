@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Weather Dashboard</h1>
+            <div class="search-container">
+                <svg class="location-icon" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                <input type="text" class="search-input" placeholder="Enter city name and press Enter..." id="locationInput">
+            </div>
+        </div>
+
+        <div id="weatherContent">
+            <div class="loading">
+                <div class="spinner"></div>
+                <p>Loading weather data...</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Weather data updates every hour</p>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
